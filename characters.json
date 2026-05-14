@@ -1,110 +1,110 @@
 [
   {
-    "id": "nova",
-    "name": "Nova",
-    "tagline": "Space Cadet",
-    "part": "helmet visor",
-    "h": 200,
-    "s": 85,
-    "b": 95
-  },
-  {
-    "id": "bramble",
-    "name": "Bramble",
-    "tagline": "Forest Bear",
-    "part": "mail satchel",
-    "h": 25,
+    "id": "whiskers",
+    "name": "Whiskers",
+    "tagline": "Tabby Cat",
+    "part": "red collar",
+    "h": 348,
     "s": 75,
-    "b": 75
+    "b": 91
   },
   {
-    "id": "pip",
-    "name": "Pip",
-    "tagline": "Parade Duck",
-    "part": "drum major jacket",
-    "h": 350,
-    "s": 85,
-    "b": 90
-  },
-  {
-    "id": "bolt",
-    "name": "Bolt",
-    "tagline": "Robot Buddy",
-    "part": "chest panel",
-    "h": 120,
-    "s": 70,
-    "b": 80
-  },
-  {
-    "id": "ribbon",
-    "name": "Ribbon",
-    "tagline": "Bunny Runner",
-    "part": "scarf",
-    "h": 220,
-    "s": 75,
-    "b": 85
-  },
-  {
-    "id": "taffy",
-    "name": "Taffy",
-    "tagline": "Candy Pup",
-    "part": "apron",
-    "h": 330,
-    "s": 65,
-    "b": 95
-  },
-  {
-    "id": "moon",
-    "name": "Moonsail",
-    "tagline": "Sailor Moon",
-    "part": "sailor collar",
-    "h": 45,
-    "s": 90,
-    "b": 95
-  },
-  {
-    "id": "fable",
-    "name": "Fable",
-    "tagline": "Story Fox",
-    "part": "glasses frame",
-    "h": 340,
-    "s": 80,
-    "b": 85
-  },
-  {
-    "id": "jazz",
-    "name": "Jazz",
-    "tagline": "Club Frog",
-    "part": "vest",
-    "h": 280,
-    "s": 60,
-    "b": 75
-  },
-  {
-    "id": "glimmer",
-    "name": "Glimmer",
-    "tagline": "Nightlight",
-    "part": "lantern",
-    "h": 50,
-    "s": 95,
+    "id": "luna",
+    "name": "Luna",
+    "tagline": "Black Cat",
+    "part": "red bow tie",
+    "h": 0,
+    "s": 72,
     "b": 100
   },
   {
-    "id": "chomp",
-    "name": "Chomp",
-    "tagline": "Snack Chef",
-    "part": "chef hat",
-    "h": 0,
-    "s": 0,
+    "id": "mochi",
+    "name": "Mochi",
+    "tagline": "Scottish Fold",
+    "part": "purple sweater",
+    "h": 283,
+    "s": 50,
+    "b": 71
+  },
+  {
+    "id": "ginger",
+    "name": "Ginger",
+    "tagline": "Orange Tabby",
+    "part": "green bandana",
+    "h": 135,
+    "s": 65,
+    "b": 80
+  },
+  {
+    "id": "snowpaw",
+    "name": "Snowpaw",
+    "tagline": "Persian Cat",
+    "part": "pink ribbon",
+    "h": 330,
+    "s": 60,
+    "b": 100
+  },
+  {
+    "id": "sushi",
+    "name": "Sushi",
+    "tagline": "Siamese Cat",
+    "part": "golden collar",
+    "h": 45,
+    "s": 100,
+    "b": 100
+  },
+  {
+    "id": "patch",
+    "name": "Patch",
+    "tagline": "Calico Cat",
+    "part": "purple harness",
+    "h": 283,
+    "s": 55,
+    "b": 72
+  },
+  {
+    "id": "misty",
+    "name": "Misty",
+    "tagline": "Russian Blue",
+    "part": "orange scarf",
+    "h": 35,
+    "s": 85,
     "b": 95
   },
   {
-    "id": "blip",
-    "name": "Blip",
-    "tagline": "Pixel Pet",
-    "part": "screen face",
-    "h": 190,
-    "s": 85,
-    "b": 90
+    "id": "yoda",
+    "name": "Yoda",
+    "tagline": "Sphynx Cat",
+    "part": "red party hat",
+    "h": 0,
+    "s": 80,
+    "b": 95
+  },
+  {
+    "id": "rusty",
+    "name": "Rusty",
+    "tagline": "Maine Coon",
+    "part": "blue bell collar",
+    "h": 204,
+    "s": 65,
+    "b": 86
+  },
+  {
+    "id": "mittens",
+    "name": "Mittens",
+    "tagline": "Tuxedo Cat",
+    "part": "red bow tie",
+    "h": 0,
+    "s": 70,
+    "b": 95
+  },
+  {
+    "id": "bluebell",
+    "name": "Bluebell",
+    "tagline": "Ragdoll Cat",
+    "part": "pink sweater",
+    "h": 340,
+    "s": 55,
+    "b": 100
   }
 ]

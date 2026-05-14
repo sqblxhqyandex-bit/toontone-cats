@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play ToneGuess - Cartoon Color Memory Game</title>
-    <meta name="description" content="Play ToneGuess online free. Study cartoon character colors, tune HSB sliders from memory, and score 10/10. 5 rounds, no signup needed.">
+    <title>Play MeowGuess - Cat Color Memory Game</title>
+    <meta name="description" content="Play MeowGuess online free. Study cat character colors, tune HSB sliders from memory, and score 10/10. 5 rounds, no signup needed.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://toneguess.pages.dev/play">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="canonical" href="https://meowguess.pages.dev/play">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
         :root {
-            --bg: #0b0b14;
-            --card: #14141f;
-            --card2: #1a1a2e;
-            --surface: #20203a;
-            --accent: #e94560;
-            --accent2: #0f3460;
+            --bg: #0d0d18;
+            --card: #14142a;
+            --card2: #1e1e3a;
+            --surface: #282850;
+            --accent: #c084fc;
+            --accent2: #7c3aed;
             --text: #eee;
-            --text2: #7676a0;
-            --success: #2ecc71;
-            --gold: #f0c840;
-            --border: #2a2a4a;
+            --text2: #8a8ab8;
+            --success: #34d399;
+            --gold: #fbbf24;
+            --border: #2e2e5a;
         }
         body { font-family: 'Inter',-apple-system,sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 0; }
 
@@ -47,8 +47,8 @@
         .start-screen .icon { font-size: 64px; margin-bottom: 8px; }
         .start-screen h1 { font-size: 28px; font-weight: 900; margin-bottom: 4px; }
         .start-screen .tagline { color: var(--text2); font-size: 14px; margin-bottom: 24px; line-height: 1.5; }
-        .start-btn { padding: 16px 48px; border: none; border-radius: 14px; background: var(--accent); color: #fff; font-size: 17px; font-weight: 700; cursor: pointer; transition: transform .1s; }
-        .start-btn:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(233,69,96,.3); }
+        .start-btn { padding: 16px 48px; border: none; border-radius: 14px; background: var(--accent); color: #111; font-size: 17px; font-weight: 700; cursor: pointer; transition: transform .1s; }
+        .start-btn:hover { transform: scale(1.02); box-shadow: 0 0 20px rgba(192,132,252,.3); }
         .start-btn:active { transform: scale(.98); }
         .start-screen .info { font-size: 11px; color: var(--text2); margin-top: 14px; }
 
@@ -98,7 +98,7 @@
         .hint-btn:hover { border-color: var(--gold); color: var(--gold); }
         .hint-btn:disabled { opacity: .3; cursor: default; border-color: var(--border); color: var(--text2); }
 
-        .submit-btn { width: 100%; padding: 14px; border: none; border-radius: 12px; background: var(--accent); color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; }
+        .submit-btn { width: 100%; padding: 14px; border: none; border-radius: 12px; background: var(--accent); color: #111; font-size: 16px; font-weight: 700; cursor: pointer; }
         .submit-btn:active { transform: scale(.98); }
         .submit-btn:disabled { opacity: .4; cursor: default; }
 
@@ -122,7 +122,7 @@
         .breakdown { margin: 16px auto; max-width: 280px; }
         .breakdown-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 14px; border-bottom: 1px solid var(--border); }
         .breakdown-row.total { border-top: 2px solid var(--accent); font-weight: 700; margin-top: 4px; padding-top: 10px; }
-        .play-again-btn { padding: 14px 40px; border: none; border-radius: 12px; background: var(--accent); color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; margin-top: 12px; }
+        .play-again-btn { padding: 14px 40px; border: none; border-radius: 12px; background: var(--accent); color: #111; font-size: 16px; font-weight: 700; cursor: pointer; margin-top: 12px; }
 
         footer { width: 100%; max-width: 560px; text-align: center; padding: 20px 0 10px; font-size: 11px; color: var(--text2); }
         footer a { color: var(--text2); text-decoration: none; margin: 0 8px; }
@@ -141,7 +141,7 @@
 </head>
 <body>
 <div class="top-bar">
-    <a href="/" class="logo">Tone<span>Guess</span></a>
+    <a href="/" class="logo">Meow<span>Guess</span></a>
     <div class="stats">
         <span>Best: <strong id="best-score">-</strong></span>
         <span>Games: <strong id="games-count">0</strong></span>
@@ -155,11 +155,11 @@
     <div class="card" id="app-card">
         <!-- START -->
         <div id="start-screen" class="start-screen">
-            <div class="icon">🎨</div>
-            <h1>ToneGuess</h1>
-            <div class="tagline">5 rounds of cartoon color memory challenge.<br>Study, recall, tune, repeat.</div>
-            <button class="start-btn" onclick="startGame()">▶ Start Game</button>
-            <div class="info">Free • No signup • 12 original characters</div>
+            <div class="icon">🐱</div>
+            <h1>MeowGuess</h1>
+            <div class="tagline">5 rounds of cat color memory challenge.<br>Study, recall, tune, repeat.</div>
+            <button class="start-btn" onclick="startGame()">🐾 Start Game</button>
+            <div class="info">Free • No signup • 12 unique cats</div>
         </div>
 
         <!-- GAME -->
@@ -174,12 +174,12 @@
 
             <div id="study-phase" class="study-phase">
                 <div class="study-header">
-                    <div class="label">🎯 Remember this color</div>
+                    <div class="label">🐱 Remember this color</div>
                     <div class="name"><span id="study-name"></span>'s <span id="study-part" class="part"></span></div>
                     <div class="tag" id="study-tag"></div>
                 </div>
                 <div class="char-card">
-                    <img id="char-img" alt="Character">
+                    <img id="char-img" alt="Cat character">
                     <div class="focus-ring"></div>
                 </div>
                 <div class="study-hint">👀 Memorize this color...</div>
@@ -249,7 +249,7 @@
                 <div class="final-label">Your Average Score</div>
                 <div class="final-score" id="final-score">0.00</div>
                 <div class="breakdown" id="breakdown"></div>
-                <button class="play-again-btn" onclick="startGame()">🔄 Play Again</button>
+                <button class="play-again-btn" onclick="startGame()">🐱 Play Again</button>
             </div>
         </div>
     </div>
@@ -259,23 +259,23 @@
 
 <footer>
     <a href="/">Home</a> • <a href="/privacy">Privacy</a> • <a href="/terms">Terms</a>
-    <p style="margin-top:4px">&copy; 2026 ToneGuess</p>
+    <p style="margin-top:4px">&copy; 2026 MeowGuess</p>
 </footer>
 
 <script>
 const CHARS = [
-    {id:'nova',name:'Nova',tag:'Space Cadet',part:'helmet visor',h:200,s:85,b:95},
-    {id:'bramble',name:'Bramble',tag:'Forest Bear',part:'mail satchel',h:25,s:75,b:75},
-    {id:'pip',name:'Pip',tag:'Parade Duck',part:'drum major jacket',h:350,s:85,b:90},
-    {id:'bolt',name:'Bolt',tag:'Robot Buddy',part:'chest panel',h:120,s:70,b:80},
-    {id:'ribbon',name:'Ribbon',tag:'Bunny Runner',part:'scarf',h:220,s:75,b:85},
-    {id:'taffy',name:'Taffy',tag:'Candy Pup',part:'apron',h:330,s:65,b:95},
-    {id:'moon',name:'Moonsail',tag:'Sailor Moon',part:'sailor collar',h:45,s:90,b:95},
-    {id:'fable',name:'Fable',tag:'Story Fox',part:'glasses frame',h:340,s:80,b:85},
-    {id:'jazz',name:'Jazz',tag:'Club Frog',part:'vest',h:280,s:60,b:75},
-    {id:'glimmer',name:'Glimmer',tag:'Nightlight',part:'lantern',h:50,s:95,b:100},
-    {id:'chomp',name:'Chomp',tag:'Snack Chef',part:'chef hat',h:0,s:0,b:95},
-    {id:'blip',name:'Blip',tag:'Pixel Pet',part:'screen face',h:190,s:85,b:90}
+    {id:'whiskers',name:'Whiskers',tag:'Tabby Cat',part:'red collar',h:348,s:75,b:91},
+    {id:'luna',name:'Luna',tag:'Black Cat',part:'red bow tie',h:0,s:72,b:100},
+    {id:'mochi',name:'Mochi',tag:'Scottish Fold',part:'purple sweater',h:283,s:50,b:71},
+    {id:'ginger',name:'Ginger',tag:'Orange Tabby',part:'green bandana',h:135,s:65,b:80},
+    {id:'snowpaw',name:'Snowpaw',tag:'Persian Cat',part:'pink ribbon',h:330,s:60,b:100},
+    {id:'sushi',name:'Sushi',tag:'Siamese',part:'golden collar',h:45,s:100,b:100},
+    {id:'patch',name:'Patch',tag:'Calico Cat',part:'purple harness',h:283,s:55,b:72},
+    {id:'misty',name:'Misty',tag:'Russian Blue',part:'orange scarf',h:35,s:85,b:95},
+    {id:'yoda',name:'Yoda',tag:'Sphynx Cat',part:'red party hat',h:0,s:80,b:95},
+    {id:'rusty',name:'Rusty',tag:'Maine Coon',part:'blue bell collar',h:204,s:65,b:86},
+    {id:'mittens',name:'Mittens',tag:'Tuxedo Cat',part:'red bow tie',h:0,s:70,b:95},
+    {id:'bluebell',name:'Bluebell',tag:'Ragdoll',part:'pink sweater',h:340,s:55,b:100}
 ];
 
 const ROUNDS = 5;
@@ -285,14 +285,14 @@ let state, curChar;
 function init() {
     state = {
         round:0, scores:[], hints:[],
-        best: parseFloat(localStorage.getItem('tg_best'))||0,
-        games: parseInt(localStorage.getItem('tg_games'))||0
+        best: parseFloat(localStorage.getItem('mg_best'))||0,
+        games: parseInt(localStorage.getItem('mg_games'))||0
     };
     document.getElementById('best-score').textContent = state.best||'-';
     document.getElementById('games-count').textContent = state.games;
 }
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function hsl(h,s,b){return \`hsl(\${h},\${s}%,\${b}%)\`}
+function hsl(h,s,b){return `hsl(${h},${s}%,${b}%)`}
 function dist(h1,s1,b1,h2,s2,b2){const d=Math.sqrt(((h1-h2)/360)**2+((s1-s2)/100)**2+((b1-b2)/100)**2)/Math.sqrt(3);return d}
 
 function calcScore(d){return Math.round(Math.max(Math.min(10*Math.pow(1-Math.min(d,1),2.8),10),0)*100)/100}
@@ -389,7 +389,7 @@ async function submitGuess(){
     
     const el=document.getElementById('round-score');
     el.textContent=score.toFixed(2);
-    el.style.color=score>=9?'#2ecc71':score>=7?'#f0c840':score>=5?'#e67e22':'#e94560';
+    el.style.color=score>=9?'#34d399':score>=7?'#fbbf24':score>=5?'#f59e0b':'#c084fc';
     
     document.getElementById('result-area').classList.add('show');
     document.getElementById('submit-btn').disabled=true;
@@ -404,8 +404,8 @@ async function nextRound(){
 function endGame(){
     const avg=state.scores.reduce((a,b)=>a+b,0)/state.scores.length;
     const final=Math.round(avg*100)/100;
-    if(final>state.best){state.best=final;localStorage.setItem('tg_best',final);}
-    state.games++;localStorage.setItem('tg_games',state.games);
+    if(final>state.best){state.best=final;localStorage.setItem('mg_best',final);}
+    state.games++;localStorage.setItem('mg_games',state.games);
     document.getElementById('best-score').textContent=state.best||'-';
     document.getElementById('games-count').textContent=state.games;
     
