@@ -3,81 +3,81 @@
     "id": "whiskers",
     "name": "Whiskers",
     "tagline": "Tabby Cat",
-    "part": "red collar",
-    "h": 348,
-    "s": 75,
-    "b": 91
+    "part": "blue striped tie",
+    "h": 215,
+    "s": 70,
+    "b": 88
   },
   {
     "id": "luna",
     "name": "Luna",
     "tagline": "Black Cat",
-    "part": "red bow tie",
-    "h": 0,
-    "s": 72,
-    "b": 100
+    "part": "silver crescent necklace",
+    "h": 265,
+    "s": 55,
+    "b": 90
   },
   {
     "id": "mochi",
     "name": "Mochi",
     "tagline": "Scottish Fold",
-    "part": "purple sweater",
-    "h": 283,
-    "s": 50,
-    "b": 71
+    "part": "yellow scarf",
+    "h": 50,
+    "s": 85,
+    "b": 95
   },
   {
     "id": "ginger",
     "name": "Ginger",
     "tagline": "Orange Tabby",
-    "part": "green bandana",
-    "h": 135,
-    "s": 65,
-    "b": 80
+    "part": "teal bow tie",
+    "h": 180,
+    "s": 70,
+    "b": 82
   },
   {
     "id": "snowpaw",
     "name": "Snowpaw",
     "tagline": "Persian Cat",
-    "part": "pink ribbon",
-    "h": 330,
-    "s": 60,
-    "b": 100
+    "part": "sky blue hair bow",
+    "h": 200,
+    "s": 65,
+    "b": 95
   },
   {
     "id": "sushi",
     "name": "Sushi",
     "tagline": "Siamese Cat",
-    "part": "golden collar",
-    "h": 45,
-    "s": 100,
-    "b": 100
+    "part": "jade collar",
+    "h": 145,
+    "s": 75,
+    "b": 80
   },
   {
     "id": "patch",
     "name": "Patch",
     "tagline": "Calico Cat",
-    "part": "purple harness",
-    "h": 283,
-    "s": 55,
-    "b": 72
+    "part": "orange capelet",
+    "h": 25,
+    "s": 90,
+    "b": 95
   },
   {
     "id": "misty",
     "name": "Misty",
     "tagline": "Russian Blue",
-    "part": "orange scarf",
-    "h": 35,
-    "s": 85,
+    "part": "rose pink collar",
+    "h": 340,
+    "s": 60,
     "b": 95
   },
   {
     "id": "yoda",
     "name": "Yoda",
     "tagline": "Sphynx Cat",
-    "part": "red party hat",
-    "h": 0,
-    "s": 80,
+    "part": "golden chain necklace",
+    "h": 42,
+    "s": 95,
     "b": 95
   },
   {
@@ -93,18 +93,72 @@
     "id": "mittens",
     "name": "Mittens",
     "tagline": "Tuxedo Cat",
-    "part": "red bow tie",
-    "h": 0,
-    "s": 70,
-    "b": 95
+    "part": "mint green bow tie",
+    "h": 160,
+    "s": 65,
+    "b": 88
   },
   {
     "id": "bluebell",
     "name": "Bluebell",
     "tagline": "Ragdoll Cat",
-    "part": "pink sweater",
-    "h": 340,
+    "part": "lavender flower clip",
+    "h": 275,
     "s": 55,
-    "b": 100
+    "b": 92
+  },
+  {
+    "id": "pepper",
+    "name": "Pepper",
+    "tagline": "Bengal Cat",
+    "part": "coral collar",
+    "h": 15,
+    "s": 85,
+    "b": 95
+  },
+  {
+    "id": "nori",
+    "name": "Nori",
+    "tagline": "Himalayan Cat",
+    "part": "coral blue bow",
+    "h": 195,
+    "s": 70,
+    "b": 90
+  },
+  {
+    "id": "biscuit",
+    "name": "Biscuit",
+    "tagline": "British Shorthair",
+    "part": "red plaid scarf",
+    "h": 355,
+    "s": 80,
+    "b": 85
+  },
+  {
+    "id": "ember",
+    "name": "Ember",
+    "tagline": "Turkish Van",
+    "part": "purple bow tie",
+    "h": 285,
+    "s": 70,
+    "b": 88
+  },
+  {
+    "id": "pearl",
+    "name": "Pearl",
+    "tagline": "Burmese Cat",
+    "part": "turquoise collar",
+    "h": 170,
+    "s": 75,
+    "b": 85
+  },
+  {
+    "id": "mango",
+    "name": "Mango",
+    "tagline": "Somali Cat",
+    "part": "indigo cape",
+    "h": 235,
+    "s": 70,
+    "b": 85
   }
 ]
