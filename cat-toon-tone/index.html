@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cat Toon Tone Game - MeowGuess | Color Memory with Cats</title>
+<meta name="description" content="Play a cat toon tone game! MeowGuess is a fun color memory challenge featuring 12 original cats. Like Toon Tone but with cats. Study, recall, match. Free to play.">
+<meta name="keywords" content="cat toon tone, cat color game, cat toon tone game, toon tone cats, color memory game cats">
+<link rel="canonical" href="https://meowguess.pages.dev/cat-toon-tone">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0d0d18;color:#eee;max-width:640px;margin:0 auto;padding:20px;line-height:1.6}
+h1{color:#c084fc;font-size:28px;margin-bottom:4px}
+h2{color:#c084fc;font-size:20px;margin-top:28px;margin-bottom:8px}
+p{color:#8a8ab8;font-size:15px;margin:10px 0}
+a{color:#c084fc}
+.highlight{background:#1e1e3a;border:1px solid #2e2e5a;border-radius:12px;padding:20px;margin:20px 0;text-align:center}
+.highlight .btn{display:inline-block;padding:14px 36px;background:#c084fc;color:#111;text-decoration:none;border-radius:12px;font-weight:700;font-size:16px;margin-top:10px}
+.highlight .btn:hover{box-shadow:0 0 20px rgba(192,132,252,.3)}
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.cat-card{background:#14142a;border:1px solid #2e2e5a;border-radius:10px;padding:10px;text-align:center}
+.cat-card img{width:50px;height:50px;display:block;margin:0 auto 4px}
+.cat-card .nm{font-size:12px;font-weight:600}
+.cat-card .br{font-size:10px;color:#8a8ab8}
+ul{color:#8a8ab8;font-size:14px;margin:10px 0;padding-left:20px}
+ul li{margin:8px 0}
+.back{display:inline-block;margin-top:20px;color:#8a8ab8;text-decoration:none;font-size:13px}
+.back:hover{color:#eee}
+</style>
+</head>
+<body>
+<a href="/" class="back">← Back to MeowGuess</a>
+<h1>Cat Toon Tone Game</h1>
+<p>Welcome to <strong>MeowGuess</strong> — the internet's only <strong>cat toon tone</strong> color memory game! It's exactly like <strong>Toon Tone</strong>, but every character is an original cat. 🐱</p>
+
+<div class="highlight">
+    <h2>🐱 Play the Cat Toon Tone Game</h2>
+    <p>Remember the color, tune the sliders, score 10/10.<br>12 unique cats waiting for you.</p>
+    <a href="/play/" class="btn">▶ Play MeowGuess</a>
+    <p style="font-size:12px;margin-top:8px;color:#666">Free • No signup • 5 rounds</p>
+</div>
+
+<h2>Meet the Cats</h2>
+<p>Our cat toon tone game features 12 original cat characters, each with their own unique color to guess:</p>
+
+<div class="cat-grid" id="cat-grid"></div>
+
+<h2>How to Play This Cat Toon Tone Game</h2>
+<ul>
+    <li><strong>Step 1:</strong> You'll see a cute cat with a highlighted item (collar, bow tie, sweater, etc.)</li>
+    <li><strong>Step 2:</strong> Memorize that color — take as long as you need</li>
+    <li><strong>Step 3:</strong> The cat disappears! Use Hue, Saturation, and Brightness sliders to recreate the color</li>
+    <li><strong>Step 4:</strong> See your score (0-10) and compare your guess to the original</li>
+    <li><strong>Step 5:</strong> Play 5 rounds and get your final average</li>
+</ul>
+
+<h2>Why a Cat Toon Tone Game?</h2>
+<p>Toon Tone games are all about testing your color memory. Adding cats makes it more fun because:</p>
+<ul>
+    <li>😻 Cats are universally loved — instant emotional connection</li>
+    <li>🎨 Each cat breed has distinct colors, making every round unique</li>
+    <li>🧠 Memorizing a cat's collar or sweater is more engaging than a generic color block</li>
+    <li>🐾 You'll want to play again just to see all 12 cats</li>
+</ul>
+
+<div class="highlight">
+    <h2>🎮 Ready to Test Your Color Memory?</h2>
+    <p>The best cat toon tone game is one click away.</p>
+    <a href="/play/" class="btn">🐾 Start Playing</a>
+</div>
+
+<a href="/" class="back">← Back to Home</a>
+
+<script>
+const CATS = [
+    {id:'whiskers',name:'Whiskers',breed:'Tabby Cat'},
+    {id:'luna',name:'Luna',breed:'Black Cat'},
+    {id:'mochi',name:'Mochi',breed:'Scottish Fold'},
+    {id:'ginger',name:'Ginger',breed:'Orange Tabby'},
+    {id:'snowpaw',name:'Snowpaw',breed:'Persian Cat'},
+    {id:'sushi',name:'Sushi',breed:'Siamese'},
+    {id:'patch',name:'Patch',breed:'Calico Cat'},
+    {id:'misty',name:'Misty',breed:'Russian Blue'},
+    {id:'yoda',name:'Yoda',breed:'Sphynx Cat'},
+    {id:'rusty',name:'Rusty',breed:'Maine Coon'},
+    {id:'mittens',name:'Mittens',breed:'Tuxedo Cat'},
+    {id:'bluebell',name:'Bluebell',breed:'Ragdoll'}
+];
+const grid = document.getElementById('cat-grid');
+CATS.forEach(c => {
+    const d = document.createElement('div');
+    d.className = 'cat-card';
+    d.innerHTML = '<img src="/toons/'+c.id+'.svg" alt="'+c.name+'"><div class="nm">'+c.name+'</div><div class="br">'+c.breed+'</div>';
+    grid.appendChild(d);
+});
+</script>
+</body>
+</html>
