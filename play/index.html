@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play MeowGuess - Cat Toon Tone Color Memory Game | Like Toon Tone With Cats</title>
-    <meta name="description" content="Play MeowGuess online free — a cat toon tone color guessing game. Like Toon Tone with cats! Study cat colors, tune HSB sliders from memory, and score 10/10. 5 rounds, no signup.">
+    <title>Play ToonTone Cats - Toon Tone Color Memory Game | Like Toon Tone With Cats</title>
+    <meta name="description" content="Play ToonTone Cats online free — a toon tone color guessing game. Like Toon Tone with cats! Study cat colors, tune HSB sliders from memory, and score 10/10. 5 rounds, no signup.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://meowguess.pages.dev/play">
+    <link rel="canonical" href="https://toontonecats.pages.dev/play">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -141,7 +141,7 @@
 </head>
 <body>
 <div class="top-bar">
-    <a href="/" class="logo">Meow<span>Guess</span></a>
+    <a href="/" class="logo">ToonTone <span>Cats</span></a>
     <div class="stats">
         <span>Best: <strong id="best-score">-</strong></span>
         <span>Games: <strong id="games-count">0</strong></span>
@@ -156,8 +156,8 @@
         <!-- START -->
         <div id="start-screen" class="start-screen">
             <div class="icon">🐱</div>
-            <h1>MeowGuess</h1>
-            <div class="tagline">A cat toon tone game: 5 rounds of color memory challenge.<br>Like Toon Tone with cats. Study, recall, tune, repeat.</div>
+            <h1>ToonTone Cats</h1>
+            <div class="tagline">A toon tone game: 5 rounds of color memory challenge.<br>Like Toon Tone with cats. Study, recall, tune, repeat.</div>
             <button class="start-btn" onclick="startGame()">🐾 Start Game</button>
             <div class="info">Free • No signup • 12 unique cats</div>
         </div>
@@ -259,7 +259,7 @@
 
 <footer>
     <a href="/">Home</a> • <a href="/privacy">Privacy</a> • <a href="/terms">Terms</a>
-    <p style="margin-top:4px">&copy; 2026 MeowGuess</p>
+    <p style="margin-top:4px">&copy; 2026 ToonTone Cats</p>
 </footer>
 
 <script>
@@ -285,8 +285,8 @@ let state, curChar;
 function init() {
     state = {
         round:0, scores:[], hints:[],
-        best: parseFloat(localStorage.getItem('mg_best'))||0,
-        games: parseInt(localStorage.getItem('mg_games'))||0
+        best: parseFloat(localStorage.getItem('ttc_best'))||0,
+        games: parseInt(localStorage.getItem('ttc_games'))||0
     };
     document.getElementById('best-score').textContent = state.best||'-';
     document.getElementById('games-count').textContent = state.games;
@@ -404,8 +404,8 @@ async function nextRound(){
 function endGame(){
     const avg=state.scores.reduce((a,b)=>a+b,0)/state.scores.length;
     const final=Math.round(avg*100)/100;
-    if(final>state.best){state.best=final;localStorage.setItem('mg_best',final);}
-    state.games++;localStorage.setItem('mg_games',state.games);
+    if(final>state.best){state.best=final;localStorage.setItem('ttc_best',final);}
+    state.games++;localStorage.setItem('ttc_games',state.games);
     document.getElementById('best-score').textContent=state.best||'-';
     document.getElementById('games-count').textContent=state.games;
     
